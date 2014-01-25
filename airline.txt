@@ -1,0 +1,41 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.swing.text.*;
+
+public class airline extends JFrame
+{
+	Container c=getContentPane();
+	JPanel Header= new JPanel();
+	Jpanel Content=new JPanel();
+	//JLabel LAirline= new JLabel("<html><B><h1>Airline Reservation System</h1></B></html>");
+	
+	//JButton MantainFlightDetails;
+	//JButton MantainEmployeeDetails;
+	//JButton Reservation;
+	
+	public airline()
+	{
+		setBounds(0,0,600,600);
+		Header.setBackground(Color.red);
+		Content.setBackground(Color.white);
+		Header.setBounds(0,0,600,200);
+		Content.setBounds(0,200,600,400);
+
+		c.add(Header);
+		c.add(Content);
+
+		pack();
+		setVisible(true);
+
+	}
+
+	public static void main(String arfs[])
+	{
+		new airline();
+	}
+}
+			
+		
+		
